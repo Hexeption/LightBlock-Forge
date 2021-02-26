@@ -9,12 +9,12 @@ import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import uk.co.hexeption.lightblock.setup.ModBlocks;
 import uk.co.hexeption.lightblock.setup.ModParticles;
 import uk.co.hexeption.lightblock.setup.Registration;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 
 @Mod("lightblock")
 public class Lightblock {
@@ -29,7 +29,7 @@ public class Lightblock {
 
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(Items.ACACIA_BOAT);
+			return new ItemStack(ModBlocks.LIGHT_BLOCK_15.get().asItem());
 		}
 	};
 
